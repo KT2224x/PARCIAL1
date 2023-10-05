@@ -1,10 +1,10 @@
 from UI import atencion
 
 def principal():
-    while(True):
+    while True:
         atencion()
-        print("¿Quiere volver a hacer otra consulta?(s/n): ")
-        if(input() != 's'):
+        respuesta = input("¿Quiere volver a hacer otra consulta? (s/n): ")
+        if respuesta.lower() != 's':
             break
 
 if __name__ == '__main__':
