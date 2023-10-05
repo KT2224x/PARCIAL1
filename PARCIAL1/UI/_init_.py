@@ -1,4 +1,3 @@
-# UI
 import pandas as pd
 
 def atencion():
@@ -20,9 +19,9 @@ def atencion():
 # Función para obtener datos desde un archivo CSV
 def obtener_datos_csv(n, dep):
     # Lee el archivo CSV
-    df = pd.read_csv("ruta_del_archivo.csv")  # Reemplaza "ruta_del_archivo.csv" con la ruta real de tu archivo CSV
+    df = pd.read_csv(PARCIAL1/PARCIAL1/Casos_positivos_de_COVID-19_en_Colombia..csv) 
 
-    # Filtra los datos según el departamento y el límite
-    df = df[df['Departamento'] == dep][:n]
+    # Filtra los datos según el Municipio y el límite
+    df = df[df['Municipio'] == dep][:n]
 
     return df
