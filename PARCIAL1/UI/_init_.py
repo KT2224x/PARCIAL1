@@ -1,7 +1,7 @@
 import pandas as pd
 
 def atencion():
-    dep = input("Ingrese el nombre del municipio: ")
+    mun = input("Ingrese el nombre del municipio: ")
     while True:
         try:
             lim = int(input("Ingrese el Limite de registros: "))
@@ -22,6 +22,6 @@ def obtener_datos_csv(n, dep):
     df = pd.read_csv(PARCIAL1/PARCIAL1/Casos_positivos_de_COVID-19_en_Colombia..csv) 
 
     # Filtra los datos según el Municipio y el límite
-    df = df[df['Municipio'] == dep][:n]
+    df = df[df['Municipio'] == mun][:n]
 
     return df
